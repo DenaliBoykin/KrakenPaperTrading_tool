@@ -1,11 +1,17 @@
-PAIR = "XXBTZUSD"          # Kraken pair format for BTC/USD
-INTERVAL = 60              # minutes; Kraken OHLC supports interval param
-SHORT_SMA = 5
-LONG_SMA = 20
+PAIR = "XXBTZUSD"
+INTERVAL = 60
 
-STARTING_CASH = 10000.0
-FEE_RATE = 0.0026          # adjust as needed for your simulation
-TRADE_SIZE_USD = 1000.0    # fixed-size entries for simplicity
+SHORT_SMA = 8
+LONG_SMA = 21
 
-POLL_SECONDS = 30
+STARTING_CASH = 100000.0
+FEE_RATE = 0.0005
+MAX_RISK_PER_TRADE = 0.10
+STOP_LOSS_PCT = 0.02
+RISK_REWARD_RATIO = 3.0
+DAILY_PROFIT_TARGET_PCT = 0.10
+
+POLL_SECONDS = 60
 TRADE_LOG_FILE = "trades.csv"
+NOTIFICATION_WEBHOOK_URL = None
+MAX_LOOPS = None
